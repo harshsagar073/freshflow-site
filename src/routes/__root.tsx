@@ -78,13 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { name: "description", content: "A web application replicating the Stayfree India website's UI/UX design." },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:description", content: "A web application replicating the Stayfree India website's UI/UX design." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "twitter:description", content: "A web application replicating the Stayfree India website's UI/UX design." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/861100e2-8f11-4967-858d-0e6575568cb5/id-preview-f8378e89--9aceb3c9-29ce-410c-9d48-90713e48bf48.lovable.app-1781243998414.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/861100e2-8f11-4967-858d-0e6575568cb5/id-preview-f8378e89--9aceb3c9-29ce-410c-9d48-90713e48bf48.lovable.app-1781243998414.png" },
     ],
     links: [
       {
@@ -123,3 +127,4 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+

@@ -9,8 +9,111 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PubertyRouteImport } from './routes/puberty'
+import { Route as ProductsRouteImport } from './routes/products'
+import { Route as PeriodBasicsRouteImport } from './routes/period-basics'
+import { Route as ItsjustaperiodRouteImport } from './routes/itsjustaperiod'
+import { Route as ForThePlanetRouteImport } from './routes/for-the-planet'
+import { Route as FirstPeriodRouteImport } from './routes/first-period'
+import { Route as ContactUsRouteImport } from './routes/contact-us'
+import { Route as AboutUsRouteImport } from './routes/about-us'
+import { Route as WhataresanitarypadsRouteImport } from './routes/What are sanitary pads'
+import { Route as SpottingRouteImport } from './routes/Spotting'
+import { Route as PeriodPainRouteImport } from './routes/Period Pain'
+import { Route as OtherProblemsRouteImport } from './routes/Other Problems'
+import { Route as IrregularPeriodsRouteImport } from './routes/Irregular Periods'
+import { Route as FeminineHygieneProductsRouteImport } from './routes/Feminine Hygiene Products'
+import { Route as EverythingPeriodsRouteImport } from './routes/Everything Periods'
+import { Route as ChoosetherightGarllenproductforyouRouteImport } from './routes/Choose the right Garllen product for you'
+import { Route as whatArePeriodsRouteImport } from './routes/ what-are-periods'
 import { Route as IndexRouteImport } from './routes/index'
 
+const PubertyRoute = PubertyRouteImport.update({
+  id: '/puberty',
+  path: '/puberty',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductsRoute = ProductsRouteImport.update({
+  id: '/products',
+  path: '/products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeriodBasicsRoute = PeriodBasicsRouteImport.update({
+  id: '/period-basics',
+  path: '/period-basics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ItsjustaperiodRoute = ItsjustaperiodRouteImport.update({
+  id: '/itsjustaperiod',
+  path: '/itsjustaperiod',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForThePlanetRoute = ForThePlanetRouteImport.update({
+  id: '/for-the-planet',
+  path: '/for-the-planet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FirstPeriodRoute = FirstPeriodRouteImport.update({
+  id: '/first-period',
+  path: '/first-period',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactUsRoute = ContactUsRouteImport.update({
+  id: '/contact-us',
+  path: '/contact-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutUsRoute = AboutUsRouteImport.update({
+  id: '/about-us',
+  path: '/about-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhataresanitarypadsRoute = WhataresanitarypadsRouteImport.update({
+  id: '/What are sanitary pads',
+  path: '/What are sanitary pads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SpottingRoute = SpottingRouteImport.update({
+  id: '/Spotting',
+  path: '/Spotting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PeriodPainRoute = PeriodPainRouteImport.update({
+  id: '/Period Pain',
+  path: '/Period Pain',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OtherProblemsRoute = OtherProblemsRouteImport.update({
+  id: '/Other Problems',
+  path: '/Other Problems',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IrregularPeriodsRoute = IrregularPeriodsRouteImport.update({
+  id: '/Irregular Periods',
+  path: '/Irregular Periods',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeminineHygieneProductsRoute = FeminineHygieneProductsRouteImport.update({
+  id: '/Feminine Hygiene Products',
+  path: '/Feminine Hygiene Products',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EverythingPeriodsRoute = EverythingPeriodsRouteImport.update({
+  id: '/Everything Periods',
+  path: '/Everything Periods',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChoosetherightGarllenproductforyouRoute =
+  ChoosetherightGarllenproductforyouRouteImport.update({
+    id: '/Choose the right Garllen product for you',
+    path: '/Choose the right Garllen product for you',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const whatArePeriodsRoute = whatArePeriodsRouteImport.update({
+  id: '/ what-are-periods',
+  path: '/ what-are-periods',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +122,270 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ what-are-periods': typeof whatArePeriodsRoute
+  '/Choose the right Garllen product for you': typeof ChoosetherightGarllenproductforyouRoute
+  '/Everything Periods': typeof EverythingPeriodsRoute
+  '/Feminine Hygiene Products': typeof FeminineHygieneProductsRoute
+  '/Irregular Periods': typeof IrregularPeriodsRoute
+  '/Other Problems': typeof OtherProblemsRoute
+  '/Period Pain': typeof PeriodPainRoute
+  '/Spotting': typeof SpottingRoute
+  '/What are sanitary pads': typeof WhataresanitarypadsRoute
+  '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
+  '/first-period': typeof FirstPeriodRoute
+  '/for-the-planet': typeof ForThePlanetRoute
+  '/itsjustaperiod': typeof ItsjustaperiodRoute
+  '/period-basics': typeof PeriodBasicsRoute
+  '/products': typeof ProductsRoute
+  '/puberty': typeof PubertyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/ what-are-periods': typeof whatArePeriodsRoute
+  '/Choose the right Garllen product for you': typeof ChoosetherightGarllenproductforyouRoute
+  '/Everything Periods': typeof EverythingPeriodsRoute
+  '/Feminine Hygiene Products': typeof FeminineHygieneProductsRoute
+  '/Irregular Periods': typeof IrregularPeriodsRoute
+  '/Other Problems': typeof OtherProblemsRoute
+  '/Period Pain': typeof PeriodPainRoute
+  '/Spotting': typeof SpottingRoute
+  '/What are sanitary pads': typeof WhataresanitarypadsRoute
+  '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
+  '/first-period': typeof FirstPeriodRoute
+  '/for-the-planet': typeof ForThePlanetRoute
+  '/itsjustaperiod': typeof ItsjustaperiodRoute
+  '/period-basics': typeof PeriodBasicsRoute
+  '/products': typeof ProductsRoute
+  '/puberty': typeof PubertyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/ what-are-periods': typeof whatArePeriodsRoute
+  '/Choose the right Garllen product for you': typeof ChoosetherightGarllenproductforyouRoute
+  '/Everything Periods': typeof EverythingPeriodsRoute
+  '/Feminine Hygiene Products': typeof FeminineHygieneProductsRoute
+  '/Irregular Periods': typeof IrregularPeriodsRoute
+  '/Other Problems': typeof OtherProblemsRoute
+  '/Period Pain': typeof PeriodPainRoute
+  '/Spotting': typeof SpottingRoute
+  '/What are sanitary pads': typeof WhataresanitarypadsRoute
+  '/about-us': typeof AboutUsRoute
+  '/contact-us': typeof ContactUsRoute
+  '/first-period': typeof FirstPeriodRoute
+  '/for-the-planet': typeof ForThePlanetRoute
+  '/itsjustaperiod': typeof ItsjustaperiodRoute
+  '/period-basics': typeof PeriodBasicsRoute
+  '/products': typeof ProductsRoute
+  '/puberty': typeof PubertyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/ what-are-periods'
+    | '/Choose the right Garllen product for you'
+    | '/Everything Periods'
+    | '/Feminine Hygiene Products'
+    | '/Irregular Periods'
+    | '/Other Problems'
+    | '/Period Pain'
+    | '/Spotting'
+    | '/What are sanitary pads'
+    | '/about-us'
+    | '/contact-us'
+    | '/first-period'
+    | '/for-the-planet'
+    | '/itsjustaperiod'
+    | '/period-basics'
+    | '/products'
+    | '/puberty'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/ what-are-periods'
+    | '/Choose the right Garllen product for you'
+    | '/Everything Periods'
+    | '/Feminine Hygiene Products'
+    | '/Irregular Periods'
+    | '/Other Problems'
+    | '/Period Pain'
+    | '/Spotting'
+    | '/What are sanitary pads'
+    | '/about-us'
+    | '/contact-us'
+    | '/first-period'
+    | '/for-the-planet'
+    | '/itsjustaperiod'
+    | '/period-basics'
+    | '/products'
+    | '/puberty'
+  id:
+    | '__root__'
+    | '/'
+    | '/ what-are-periods'
+    | '/Choose the right Garllen product for you'
+    | '/Everything Periods'
+    | '/Feminine Hygiene Products'
+    | '/Irregular Periods'
+    | '/Other Problems'
+    | '/Period Pain'
+    | '/Spotting'
+    | '/What are sanitary pads'
+    | '/about-us'
+    | '/contact-us'
+    | '/first-period'
+    | '/for-the-planet'
+    | '/itsjustaperiod'
+    | '/period-basics'
+    | '/products'
+    | '/puberty'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  whatArePeriodsRoute: typeof whatArePeriodsRoute
+  ChoosetherightGarllenproductforyouRoute: typeof ChoosetherightGarllenproductforyouRoute
+  EverythingPeriodsRoute: typeof EverythingPeriodsRoute
+  FeminineHygieneProductsRoute: typeof FeminineHygieneProductsRoute
+  IrregularPeriodsRoute: typeof IrregularPeriodsRoute
+  OtherProblemsRoute: typeof OtherProblemsRoute
+  PeriodPainRoute: typeof PeriodPainRoute
+  SpottingRoute: typeof SpottingRoute
+  WhataresanitarypadsRoute: typeof WhataresanitarypadsRoute
+  AboutUsRoute: typeof AboutUsRoute
+  ContactUsRoute: typeof ContactUsRoute
+  FirstPeriodRoute: typeof FirstPeriodRoute
+  ForThePlanetRoute: typeof ForThePlanetRoute
+  ItsjustaperiodRoute: typeof ItsjustaperiodRoute
+  PeriodBasicsRoute: typeof PeriodBasicsRoute
+  ProductsRoute: typeof ProductsRoute
+  PubertyRoute: typeof PubertyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/puberty': {
+      id: '/puberty'
+      path: '/puberty'
+      fullPath: '/puberty'
+      preLoaderRoute: typeof PubertyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/period-basics': {
+      id: '/period-basics'
+      path: '/period-basics'
+      fullPath: '/period-basics'
+      preLoaderRoute: typeof PeriodBasicsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/itsjustaperiod': {
+      id: '/itsjustaperiod'
+      path: '/itsjustaperiod'
+      fullPath: '/itsjustaperiod'
+      preLoaderRoute: typeof ItsjustaperiodRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/for-the-planet': {
+      id: '/for-the-planet'
+      path: '/for-the-planet'
+      fullPath: '/for-the-planet'
+      preLoaderRoute: typeof ForThePlanetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/first-period': {
+      id: '/first-period'
+      path: '/first-period'
+      fullPath: '/first-period'
+      preLoaderRoute: typeof FirstPeriodRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact-us': {
+      id: '/contact-us'
+      path: '/contact-us'
+      fullPath: '/contact-us'
+      preLoaderRoute: typeof ContactUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-us': {
+      id: '/about-us'
+      path: '/about-us'
+      fullPath: '/about-us'
+      preLoaderRoute: typeof AboutUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/What are sanitary pads': {
+      id: '/What are sanitary pads'
+      path: '/What are sanitary pads'
+      fullPath: '/What are sanitary pads'
+      preLoaderRoute: typeof WhataresanitarypadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Spotting': {
+      id: '/Spotting'
+      path: '/Spotting'
+      fullPath: '/Spotting'
+      preLoaderRoute: typeof SpottingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Period Pain': {
+      id: '/Period Pain'
+      path: '/Period Pain'
+      fullPath: '/Period Pain'
+      preLoaderRoute: typeof PeriodPainRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Other Problems': {
+      id: '/Other Problems'
+      path: '/Other Problems'
+      fullPath: '/Other Problems'
+      preLoaderRoute: typeof OtherProblemsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Irregular Periods': {
+      id: '/Irregular Periods'
+      path: '/Irregular Periods'
+      fullPath: '/Irregular Periods'
+      preLoaderRoute: typeof IrregularPeriodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Feminine Hygiene Products': {
+      id: '/Feminine Hygiene Products'
+      path: '/Feminine Hygiene Products'
+      fullPath: '/Feminine Hygiene Products'
+      preLoaderRoute: typeof FeminineHygieneProductsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Everything Periods': {
+      id: '/Everything Periods'
+      path: '/Everything Periods'
+      fullPath: '/Everything Periods'
+      preLoaderRoute: typeof EverythingPeriodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Choose the right Garllen product for you': {
+      id: '/Choose the right Garllen product for you'
+      path: '/Choose the right Garllen product for you'
+      fullPath: '/Choose the right Garllen product for you'
+      preLoaderRoute: typeof ChoosetherightGarllenproductforyouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ what-are-periods': {
+      id: '/ what-are-periods'
+      path: '/ what-are-periods'
+      fullPath: '/ what-are-periods'
+      preLoaderRoute: typeof whatArePeriodsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +398,24 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  whatArePeriodsRoute: whatArePeriodsRoute,
+  ChoosetherightGarllenproductforyouRoute:
+    ChoosetherightGarllenproductforyouRoute,
+  EverythingPeriodsRoute: EverythingPeriodsRoute,
+  FeminineHygieneProductsRoute: FeminineHygieneProductsRoute,
+  IrregularPeriodsRoute: IrregularPeriodsRoute,
+  OtherProblemsRoute: OtherProblemsRoute,
+  PeriodPainRoute: PeriodPainRoute,
+  SpottingRoute: SpottingRoute,
+  WhataresanitarypadsRoute: WhataresanitarypadsRoute,
+  AboutUsRoute: AboutUsRoute,
+  ContactUsRoute: ContactUsRoute,
+  FirstPeriodRoute: FirstPeriodRoute,
+  ForThePlanetRoute: ForThePlanetRoute,
+  ItsjustaperiodRoute: ItsjustaperiodRoute,
+  PeriodBasicsRoute: PeriodBasicsRoute,
+  ProductsRoute: ProductsRoute,
+  PubertyRoute: PubertyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
